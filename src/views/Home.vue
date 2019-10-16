@@ -141,7 +141,8 @@
     },
 
     created () {
-      this.initialize()
+      // this.initialize()
+      this.$store.dispatch('viewAllMovies');
     },
 
     methods: {

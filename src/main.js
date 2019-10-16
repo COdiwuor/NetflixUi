@@ -7,6 +7,19 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
+import MovieMixin from "./mixins/movieVuex"
+
+Vue.mixin(MovieMixin);
+
+// axios.interceptors.request.use(function (config) {
+//   config.headers = {
+//     'Content-Type' : 'application/json',
+//   }
+//   return config
+// }, function(error){
+
+// })
+
 new Vue({
   router,
   store,
